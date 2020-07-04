@@ -1,0 +1,193 @@
+/* NEW STYLING */
+
+/* CAROUSEL */
+
+
+
+#carouselExampleIndicators { 
+
+   background-color: #ffffff !important; 
+}
+/* this is the styling for the div the carousel sits in */
+
+
+       
+
+.HPCarousel-item-title {
+    position: absolute; 
+    z-index: 1; /*makes it on top of the carousel*/ 
+    background-color: white; 
+    top:350px; 
+    right:40px; 
+    opacity: .7; 
+    width: 30%; 
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+ /* This is the styling fo rthe text overlay*/
+
+.HPCarousel-item-title > h3 {
+    font-size: 28px; 
+    color: black;
+    padding:10px;
+    dsiplay: block;
+    }
+
+        /* Blog Text */
+
+.HPCarousel-item-text {
+    position: absolute; 
+    z-index: 2; 
+    color: black; 
+    background-color: white; 
+    top:150px; 
+    right:40px; 
+    opacity: .55;
+    width: 450px; 
+    height: 350px; 
+    text-align: center;
+    display: flex;
+}
+.HPCarousel-item-title > p {
+    font-size: 14px; 
+    padding: 5px;
+}
+
+        
+
+/* CATEGORIES */
+
+.categories-container {
+  width: calc(100% / 3);
+  height: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0;
+  float: left;
+}
+
+.categories-img {
+  display: inline;
+}
+
+
+/* ALL BLOGS GRID*/
+
+/* LAYOUT */
+
+
+main {
+    min-height: 90vh;
+    background-color: #ffffff;
+    color: black;
+    padding-bottom: 3rem;
+}
+
+img {
+    
+}
+
+.container {
+ 
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+
+
+/* Gallery Section */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem -1rem;
+    padding-bottom: 3rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    
+}
+
+.gallery-item {
+    position: relative;
+    flex: 20rem;
+    margin: 1rem;
+    color: #fff;
+    cursor: pointer;
+    height: 22rem;
+
+}
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item-info {
+    display: none;
+}
+
+.gallery-item-info li {
+    display: block;
+
+}
+
+
+
+
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/*register form styling */
+
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 2px;
+}
+
+/* Add a blue text color and a checkmark when the requirements are right */
+.valid {
+  color: #3F7CAC;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a orange text color and an "x" when the requirements are wrong */
+.invalid {
+  color: #FCB078;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+/*end register form styling*/

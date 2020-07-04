@@ -1,0 +1,448 @@
+/*---------- ACROSS THE SITE -----------*/
+
+
+@media screen and (min-width: 25em){
+  html { font-size: calc( 9px + (14 - 9) * (80vw - 320px) / (1200 - 320) ); }
+}
+
+html, h1, h2, h3, h4, h5, h6 {
+ font-family: 'Roboto Slab', serif;
+}
+
+p, i, a {
+  font-family: 'Open Sans', sans-serif;  
+}
+
+#webpage-container{
+    position: relative;
+    min-height: 100vh;
+}
+
+.main-section-dashboard {
+            margin: auto;
+            width: 90%;
+            padding: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+           /* margin-top: 50px;
+            margin-bottom: 50px;*/
+ }
+ 
+ 
+ .main-section{
+    padding-top:50px;
+    padding-left:84px;
+    padding-right:84px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+ }
+ 
+@media screen and (min-width: 60em){
+    .main-section{ 
+        padding-top:20px;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        overflow: hidden;
+    }    
+}
+    
+/* NAVBAR STYLING */
+
+.header {
+        background-color: #3F7CAC;
+    } 
+
+ul {
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+ 
+ul li {
+    list-style-type: none;
+}
+ul li a:hover {
+    opacity: .7;
+}
+ 
+ul li a i {
+    background: #3F7CAC;
+    width: 35px;
+}
+
+ul li a i:hover {
+    opacity: .7;
+}
+/* removed as effected centre of other nav elements
+.search-fa {
+    font-size: 16px;
+    color: #FCB078;
+    position: absolute;
+    top: 18px;
+    margin-right: 40px;
+}
+
+.search-fa:hover {
+    color: #70D6FF;
+    cursor: pointer;
+}
+*/
+
+
+.searchfatop {
+    padding-top: 0.5em;
+    color: #FCB078;
+}
+
+.searchfatop:hover {
+    color: #70D6FF;
+    cursor: pointer;
+}
+
+.searchfa {
+    font-size: 16px;
+    color: #FCB078;
+}
+
+.searchfa:hover {
+    color: #70D6FF;
+    cursor: pointer;
+}
+
+/* Style the navbar */
+#navbar {
+  background-color: #3F7CAC;
+}
+
+/* Navbar links in responsive mode */
+#navbar a {
+  color: #FFFFFF;
+}
+
+#icon 
+{
+  color: #70D6FF;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+#icon:hover {
+  color: #3F7CAC;
+  cursor: pointer;
+}
+
+
+.navbar.navbar-brand {
+   position: absolute;
+}
+
+.nav-item {
+
+}
+
+.navbar-toggler {
+    border: none;
+    /*background-color: #FFFFFF;*/
+}
+
+
+
+
+
+div.sticky {
+        position: -webkit-sticky; 
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+/* navbar image*/
+img {max-width:100%}
+
+
+
+
+/* Style the search button */
+.openbtn {
+  padding: 10px;
+  background: #FCB078;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.openbtn:hover {
+  background: #70D6FF;
+}
+
+
+
+
+/* The overlay effect with black background */
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 40;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9); /* Black with a little bit see-through */
+}
+
+/* The content */
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+  
+}
+
+/* Search close button */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+/* Style the search field */
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+/* Style the search submit button */
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
+
+
+
+/* FOOTER STYLING */
+
+#footer {
+   background-color: #3F7CAC;
+   
+}
+
+
+.footertext h6 a {
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footertext h6 a:hover {
+    opacity: .7;
+}
+
+
+#copyright {
+    font-family: 'Open Sans', san-serif;
+    background-color: #3F7CAC;
+    text-align: center;
+    color: #70D6FF;
+    padding-bottom: 15px;
+}
+
+
+/* FORM STYLING */
+
+
+     /* SEARCH RESULTS STYLING */     
+            
+    .results {
+         font-size: 14px;
+         font-family: 'Open Sans', san-serif;
+         text-align: center;
+         position: relative;
+    }
+
+    .card {
+        
+        text-overflow: ellipsis;
+        display: inline-block;
+    }
+    
+.whole-card-link {
+    text-decoration:none;
+    color:black;
+}
+
+.whole-card-link:hover{
+    text-decoration:none;
+    color:black;
+}
+  
+
+
+.table-container-search{
+    width:100%;
+    padding:0;
+    justify-content: flex-start;
+    margin-left:84px;
+}
+
+
+ .flex-table-search {width:100%;
+  display: flex;
+  flex-flow: row wrap;
+  transition: 0.5s;
+  justify-content: flex-start;
+}   
+    
+.flex-row-search{ width:350px;height:480px;  padding:10px; margin-bottom: 20px;
+}  
+
+
+/* ------- ABOUT PAGE ------ */ 
+     
+.intro-section-about{
+    padding-top: 50px;
+    width:100%;
+    padding-bottom:50px;
+    padding-left:80px;
+    padding-right:84px;
+    background-color: white;
+}
+
+
+.table-container-about{
+    width:100%;
+    padding:0;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+
+.flex-table-about {width:100%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    transition: 0.5s;
+                    justify-content: flex-start;
+}   
+
+.flex-row-about{ width:350px; height:500x;  padding:20px;
+}  
+
+
+
+
+
+/*-------BLOGGER DASHBOARD------------*/
+
+.intro-section-dashboard{
+    padding-top: 50px;
+    width:100%;
+    padding-bottom:50px;
+}
+.row-dashboard{
+    justify-content: center;
+}
+
+img.dashboard-img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+}
+
+.table-container-intro-dashboard{
+    width:100%;
+    padding:0;
+    justify-content: center;
+    padding-top:50px;
+    margin-bottom: 70px;
+
+}
+
+.table-container-dashboard{
+    width:100%;
+    padding:0;
+    justify-content: center;
+
+}
+
+.flex-table-dashboard {width:100%;
+             display: flex;
+             flex-flow: row wrap;
+             transition: 0.5s;
+             justify-content: center;
+}   
+
+.flex-row-dashboard{ 
+    width:400px;
+    height:440px;  
+    padding:10px;  
+    justify-content: center;
+}  
+
+.flex-row-intro-dashboard{ 
+    justify-content: center;
+    padding-right:60px;
+}  
+
+#blogger-name h1{
+    padding-top:5px;
+}
+
+
+.right { float: right; }
+.left { float: left; }
+.clear { clear: both; }
+
+
+.container-dashboard {
+  width: 80%;
+  max-width: 1100px;
+  padding: 0;
+}
+
